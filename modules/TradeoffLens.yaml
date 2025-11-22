@@ -1,0 +1,12 @@
+name: TradeoffLens
+description: "Analyze trade-offs and competing axes."
+
+operators:
+  - id: O_surfaceAxes
+    description: "Reveal key evaluation axes."
+
+  - id: O_frontier
+    description: "Identify Pareto frontier."
+
+  - id: O_sensitivity
+    description: "Test sensitivity against parameter changes."
