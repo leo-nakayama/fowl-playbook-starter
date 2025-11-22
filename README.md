@@ -104,6 +104,8 @@ When you run a playbook, the runner produces a structured report:
 
 ---
 
+## FOWL Thinking Pipeline
+
 ```text
 [1. Context Layer]
       │
