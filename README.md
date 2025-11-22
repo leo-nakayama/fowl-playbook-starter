@@ -48,7 +48,7 @@ FOWL Playbooks unify:
 ### 1. Clone
 
 ```bash
-git clone https://github.com/<yourname>/fowl-playbook-starter
+git clone https://github.com/leo-nakayama/fowl-playbook-starter
 cd fowl-playbook-starter
 ```
 
