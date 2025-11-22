@@ -104,6 +104,7 @@ When you run a playbook, the runner produces a structured report:
 
 ---
 
+```text
 [1. Context Layer]
       │
       ▼
@@ -139,7 +140,7 @@ Raw Facts / Events / Ideas
 Patterns / Trade-offs / Telos / Micro-Playbook
 (FinalCause)
 
-
+```
 
 ## Who Is This For?
 
