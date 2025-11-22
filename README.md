@@ -104,6 +104,43 @@ When you run a playbook, the runner produces a structured report:
 
 ---
 
+[1. Context Layer]
+      │
+      ▼
+Raw Facts / Events / Ideas
+      │
+      │ (MaterialCause)
+      ▼
+────────────────────────────────────────────
+[2. Logic Layer: call]
+      │
+      ├─ O_decompose (AristotleFourCauses)
+      ├─ O_surfaceAxes (TradeoffLens)
+      ├─ O_detectShadowLine (PoliticalDynamics)
+      └─ O_selfReflect (SyntheticNaikan)
+             …
+      │
+      │ (EfficientCause)
+      ▼
+────────────────────────────────────────────
+[3. Structured Outputs]
+      │
+      ├─ causes.yaml
+      ├─ axes.yaml
+      ├─ shadow.yaml
+      └─ reflections.yaml
+      │
+      │ (FormalCause)
+      ▼
+────────────────────────────────────────────
+[4. Observation Report]
+      │
+      ▼
+Patterns / Trade-offs / Telos / Micro-Playbook
+(FinalCause)
+
+
+
 ## Who Is This For?
 
 * engineers who want structured thinking
