@@ -1,0 +1,33 @@
+name: tradeoff_compare
+description: "Compare two strategies using TradeoffLens"
+
+context:
+  choices:
+    - name: "Option A"
+      details: "Fast, high risk"
+    - name: "Option B"
+      details: "Slower, low risk"
+
+call:
+  - module: TradeoffLens
+    op: O_surfaceAxes
+    args:
+      data: ["Speed","Risk","Control","Predictability"]
+    save_as: axes
+
+  - module: TradeoffLens
+    op: O_frontier
+    args:
+      items: context.choices
+      axes: axes
+    save_as: frontier
+
+outputs:
+  - axes
+  - frontier
+
+ObservationReport:
+  module: ["TradeoffLens"]
+  function: "Deduction"
+  input: "outputs"
+  format: "FOWL-Observation-Report-v1"
