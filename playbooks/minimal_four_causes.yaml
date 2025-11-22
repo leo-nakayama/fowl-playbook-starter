@@ -1,0 +1,21 @@
+name: minimal_four_causes
+description: "Simple Four Causes breakdown"
+
+context:
+  idea: "Why do some projects stall?"
+
+call:
+  - module: AristotleFourCauses
+    op: O_decompose
+    args:
+      data: context.idea
+    save_as: causes
+
+outputs:
+  - causes
+
+ObservationReport:
+  module: ["AristotleFourCauses"]
+  function: "Deduction"
+  input: "outputs"
+  format: "FOWL-Observation-Report-v1"
