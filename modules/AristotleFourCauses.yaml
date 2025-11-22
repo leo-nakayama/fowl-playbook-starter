@@ -1,0 +1,12 @@
+name: AristotleFourCauses
+description: "Logical operators for decomposition using the Four Causes."
+
+operators:
+  - id: O_decompose
+    description: "Break input into material, formal, efficient, and final causes."
+
+  - id: O_tracechain
+    description: "Trace causal dependencies."
+
+  - id: O_telos_check
+    description: "Check whether purpose (telos) aligns with structure."
